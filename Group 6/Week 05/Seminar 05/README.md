@@ -341,12 +341,8 @@ void free() {
 void copyFrom(const Person& other) {
     // Няма нужда да трием тук, понеже разчитаме, че когато трябва
     // free() функцията ще е извикана преди copyFrom()
-    if (other.name != nullptr) {
-        name = new char[strlen(other.name) + 1];
-        strcpy(name, other.name);
-    } else {
-        name = nullptr;
-    }
+    name = new char[strlen(other.name) + 1];
+    strcpy(name, other.name);
     age = other.age;
 }
 ```

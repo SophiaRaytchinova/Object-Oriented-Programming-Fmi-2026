@@ -37,6 +37,10 @@ public:
 
 	operator bool() const;
 
+	NVector& operator++();
+
+	NVector operator++(int dummy);
+
 	NVector operator()(const std::function<int(int)>& func);
 
 	friend ostream& operator<<(ostream& os, const NVector& v);

@@ -3,7 +3,7 @@
 
 class VehicleList {
 private:
-    Vehicle** data; // Масив от указатели
+    Vehicle** data;
     unsigned count;
     unsigned currentCapacity;
 

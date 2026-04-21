@@ -14,7 +14,6 @@ private:
 public:
     Vehicle(const Registration& r, const char* desc, int y, int p);
     
-    // Голямата четворка (заради динамичното описание)
     Vehicle(const Vehicle& other);
     Vehicle& operator=(const Vehicle& other);
     ~Vehicle();

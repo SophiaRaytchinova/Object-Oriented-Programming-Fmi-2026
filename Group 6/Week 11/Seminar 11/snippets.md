@@ -226,7 +226,7 @@ using namespace std;
 class A
 {
 	float d;
-    public:
+public:
 	int a;
 	void change(int i){
 		a = i;
@@ -239,7 +239,7 @@ class A
 class B: public A
 {
 	int a = 15;
-    public:
+public:
 	void print(){
 		cout<<a<<endl;
 	}

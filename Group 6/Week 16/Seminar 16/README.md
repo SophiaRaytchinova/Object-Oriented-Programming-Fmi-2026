@@ -880,7 +880,7 @@ public:
     // Rule of Zero — компилаторът генерира всичко правилно
 
     struct Builder {
-        // private по default — само Computer може да чете чрез friend:
+        // public по default — ако беше `class Builder` Computer може да чете данните чрез friend class:
         size_t      ssd, ram;
         bool        hasGPU       = false;
         bool        hasBluetooth = false;
